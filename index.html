@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Best Online Casino Sites UK 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a0f2e;
+            background-image: radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+                            radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.3) 0%, transparent 50%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #2d2d2d;
+            padding: 0.75rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo-icon {
+            background: linear-gradient(45deg, #8b5cf6, #ec4899);
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #8b5cf6;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .feature-icon {
+            font-size: 1.2rem;
+        }
+
+        .advertising-disclosure {
+            text-align: right;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+
+        /* Casino List */
+        .casino-container {
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            padding: 0 1rem;
+        }
+
+        .table-header {
+            display: grid;
+            grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+            gap: 1rem;
+            background: #2d2d2d;
+            color: white;
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .casino-list {
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .casino-item {
+            position: relative;
+            background: white;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .casino-item.featured {
+            border: 3px solid #ffd700;
+        }
+
+        .casino-card {
+            background: white;
+            color: #000;
+            display: grid;
+            grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+            padding: 1.25rem 1.5rem;
+            position: relative;
+            min-height: 90px;
+        }
+
+        .casino-tag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #065fea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.75rem;
+            border-bottom-right-radius: 5px;
+            font-weight: 500;
+            z-index: 2;
+        }
+
+        .casino-tag.trending {
+            background: #843776;
+        }
+
+        .casino-tag.fast-payout {
+            background: #843776;
+        }
+
+        .casino-tag.welcome-bonus {
+            background: #065fea;
+        }
+
+        .casino-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 1rem;
+        }
+
+        .casino-logo img,
+        .casino-logo svg {
+            max-width: 140px;
+            max-height: 60px;
+            object-fit: contain;
+        }
+
+        .bonus-info {
+            text-align: center;
+            padding: 0;
+        }
+
+        .bonus-text {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+            color: #000;
+        }
+
+        .rating-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            letter-spacing: 1px;
+        }
+
+        .reviews-count {
+            font-size: 0.7rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .score-section {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .score {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000;
+            line-height: 1;
+        }
+
+        .cta-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .get-bonus-btn {
+            background: #8b3f99;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            min-width: 140px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .get-bonus-btn:hover {
+            background: #9a4589;
+            transform: translateY(-1px);
+        }
+
+        .get-bonus-btn.green {
+            background: #4caf50;
+        }
+
+        .get-bonus-btn.green:hover {
+            background: #5cbf60;
+        }
+
+        .visit-link {
+            color: #065fea;
+            font-size: 0.85rem;
+            text-decoration: none;
+            margin-top: 0.3rem;
+            display: block;
+            font-weight: 400;
+        }
+
+        .visit-link:hover {
+            text-decoration: underline;
+        }
+
+        .terms {
+            background: #f7f7f7;
+            color: #666;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            border-top: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .show-more {
+            color: #065fea;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Content Section */
+        .content-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content-section-inner {
+            background: rgba(26, 26, 46, 0.95);
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .content-section p {
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            body {
+                background: #1a1a2e;
+                background-image: none;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .features {
+                gap: 1rem;
+                justify-content: space-around;
+            }
+
+            .feature {
+                font-size: 0.8rem;
+            }
+
+            .table-header {
+                display: none;
+            }
+
+            .casino-list {
+                background: transparent;
+                gap: 0;
+            }
+
+            .casino-item {
+                margin-bottom: 1.5rem;
+                background: transparent;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .casino-item.featured {
+                border: none;
+            }
+
+            .casino-card {
+                display: block;
+                border-radius: 12px;
+                padding: 0;
+                background: linear-gradient(180deg, #2d1b69 0%, #1a0f2e 100%);
+                color: white;
+                position: relative;
+                min-height: auto;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+                overflow: hidden;
+            }
+
+            .casino-item.featured .casino-card {
+                box-shadow: 0 0 0 2px #d6c31d, 0 4px 20px rgba(0,0,0,0.5);
+            }
+
+            .casino-tag {
+                font-size: 0.75rem;
+                padding: 0.4rem 1rem;
+                border-radius: 0 0 12px 0;
+            }
+
+            .casino-tag.trending {
+                background: #065eea;
+            }
+
+            .casino-tag.fast-payout {
+                background: #065eea;
+            }
+
+            /* Welcome Bonus label */
+            .casino-card::before {
+                content: "Welcome Bonus";
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: transparent;
+                color: rgba(255,255,255,0.7);
+                padding: 0.8rem 1rem 0;
+                font-size: 0.75rem;
+                font-weight: normal;
+            }
+
+            .casino-logo {
+                margin: 2.5rem 1rem 1rem;
+                justify-content: flex-start;
+                padding-top: 0;
+                padding-left: 0;
+            }
+
+            .casino-logo img,
+            .casino-logo svg {
+                max-width: 100px;
+                max-height: 50px;
+                filter: brightness(0) invert(1);
+            }
+
+            .bonus-info {
+                text-align: left;
+                margin: 0.5rem 1rem 1rem;
+                padding: 0;
+            }
+
+            .bonus-text {
+                font-size: 1.1rem;
+                color: white;
+                font-weight: 600;
+                line-height: 1.3;
+            }
+
+            .rating-section {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin: 0 1rem 1rem;
+                text-align: left;
+                flex-direction: row;
+            }
+
+            .stars {
+                font-size: 1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                color: #ffd700;
+            }
+
+            .reviews-count {
+                display: none;
+            }
+
+            .score-section {
+                display: block;
+                margin: -3rem 1rem 1rem auto;
+                width: auto;
+                text-align: right;
+            }
+
+            .score {
+                font-size: 2.2rem;
+                color: white;
+                font-weight: bold;
+            }
+
+            .cta-section {
+                margin: 0;
+                padding: 1rem;
+                background: rgba(0,0,0,0.2);
+                flex-direction: column;
+            }
+
+            .get-bonus-btn {
+                width: 100%;
+                margin: 0;
+                padding: 0.8rem;
+                font-size: 1rem;
+                min-width: auto;
+                background: linear-gradient(270deg, #843776 0%, #662d91 100%);
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+            .get-bonus-btn.green {
+                background: #4caf50;
+            }
+
+            .visit-link {
+                display: none;
+            }
+
+            .terms {
+                background: transparent;
+                color: rgba(255,255,255,0.7);
+                margin: 0;
+                padding: 1rem;
+                border-radius: 0;
+                border-top: none;
+                font-size: 0.7rem;
+                line-height: 1.3;
+            }
+
+            .show-more {
+                color: #8b5cf6;
+            }
+
+            /* Content section mobile */
+            .content-section {
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            
+            .content-section-inner {
+                background: rgba(26, 26, 46, 0.95);
+                padding: 2rem 1.5rem;
+            }
+
+            .content-section h2 {
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            .content-section p {
+                color: rgba(255,255,255,0.9);
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">★</div>
+                <span><strong>BEST</strong><span style="color: #8b5cf6;">CASINOSITES</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#slots">Slots</a></li>
+                <li><a href="#new-casinos">New Casinos</a></li>
+                <li><a href="#live-dealer">Live Dealer</a></li>
+                <li><a href="#roulette">Roulette</a></li>
+                <li><a href="#blackjack">Blackjack</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="date">July 24, 2025</div>
+        <h1 class="main-title">10 Best Online Casino Sites UK</h1>
+        <p class="subtitle">Find comprehensive reviews of the best UK casino sites.<br>
+        Compare between top 10 casino sites UK offers.<br>
+        Choose the right UK casino site for you</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🇬🇧</div>
+                <span>UK Licensed</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <span>Secure & Trusted</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💳</div>
+                <span>Fast Withdrawals</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <span>Daily Updated</span>
+            </div>
+        </div>
+        
+        <div style="margin-top: 1.5rem;">
+            <button style="background: #065eea; color: white; border: none; padding: 0.6rem 1.5rem; border-radius: 5px; font-weight: 600; font-size: 0.95rem; cursor: pointer;">Best Bonus</button>
+        </div>
+    </header>
+
+    <div class="advertising-disclosure">18+ Advertising Disclosure</div>
+
+    <!-- Casino List -->
+    <main class="casino-container">
+        <div class="table-header">
+            <div>OUR TOP PICKS</div>
+            <div>WELCOME BONUS</div>
+            <div>USER RATING</div>
+            <div>OUR SCORE</div>
+            <div>VISIT SITE</div>
+        </div>
+
+        <div class="casino-list">
+            <!-- NY Spins -->
+            <div class="casino-item featured">
+                <div class="casino-card">
+                    <div class="casino-tag">Best Bonus</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <rect width="160" height="80" fill="#1a1a1a" rx="4"/>
+                            <text x="80" y="40" text-anchor="middle" fill="white" font-size="24" font-weight="bold">NY</text>
+                            <text x="80" y="60" text-anchor="middle" fill="white" font-size="16" font-weight="bold">SPINS</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">100% Bonus Up to £50 + 50 Free Spins</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★★</div>
+                        <div class="reviews-count">Reviews (22,602)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.8</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit NY Spins »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    Must be 18+ to use. Welcome offer for new players residing in Great Britain only. Maximum £50 bonus. Minimum deposit: £20. Deposit Bonus wins are capped at £500. Max bet with active bonus: £2. Wagering requirement 100% match deposit bonus: 30 times sum of deposit + bonus. Winnings from Free Spins are credited as Real Money without wagering requirement. Some games may not be played with an active b... <span class="show-more">Show More</span>
+                </div>
+            </div>
+
+            <!-- DUB Casino -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag">Player's Choice</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <text x="80" y="35" text-anchor="middle" fill="#d4af37" font-size="28" font-weight="bold">DUB</text>
+                            <text x="80" y="55" text-anchor="middle" fill="#333" font-size="14">CASINO</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">Welcome Bonus Get 100% Up To £100</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviews-count">Reviews (14,888)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.6</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit DUB Casino »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    New players only. Wager from real balance first. 50X wager the bonus. Contribution varies per game. Selected games only. Wager calculated on bonus bets only. Bonus valid 30 Days from receipt. Max conversion: 3x the bonus amount. Excluded Skrill deposits. Withdrawal requests voids all active pending bonuses. Full T&Cs apply... <span class="show-more">Show More</span>
+                </div>
+            </div>
+
+            <!-- Karamba -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag">Player's Choice</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <text x="80" y="50" text-anchor="middle" fill="#00d4aa" font-size="24" font-weight="bold">KARAMBA</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">100% Bonus Up to £250 + 250 Bonus Spins</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviews-count">Reviews (14,888)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.6</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit Karamba »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    18+. New players only. Offer is valid on 1st deposit of min £10. 100% bonus match up to £250 plus 250 bonus spins on Big Bass Splash. Bonus funds + spin winnings are separate to cash funds and subject to 35x wagering requirement (bonus + deposit). Only bonus funds count towards wagering contribution. Winnings from Bonus Spins credited as Bonus funds and capped at £100. Bonus funds must be used wit... <span class="show-more">Show More</span>
+                </div>
+            </div>
+
+            <!-- Voodoo Dreams -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag trending">Trending Now</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <text x="80" y="40" text-anchor="middle" fill="#8b5cf6" font-size="18" font-weight="bold">VOODOO</text>
+                            <text x="80" y="60" text-anchor="middle" fill="#8b5cf6" font-size="18" font-weight="bold">DREAMS</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">100% Bonus up to £50 + 50 Real Money Free Spins</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviews-count">Reviews (34,462)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.4</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit VoodooDreams »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    18+ new players only. Maximum £50 bonus. Minimum deposit: £20. Deposit Bonus wins are capped at £500. Max bet with active bonus: £2. Wagering requirement 100% match deposit bonus: 30 times sum of deposit + bonus. Winnings from Free Spins are credited as Real Money without wagering requirement. Some games may not be played with an active bonus. Games may contribute differently when wagering a bonus... <span class="show-more">Show More</span>
+                </div>
+            </div>
+
+            <!-- Betfred -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag fast-payout">Fast Payouts</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <rect width="160" height="50" fill="#e30613" rx="4"/>
+                            <text x="80" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">BETFRED</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">Bet £10 Get 200 Free Spins</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviews-count">Reviews (34,512)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.2</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit BETFRED »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    New customers only. Register and enter promo code B60BET prior to deposit. Deposit using a Debit Card and bet £10+ on Any games within 10 days of account registration. T&Cs apply. 18+ BeGambleAware.org
+                </div>
+            </div>
+
+            <!-- NY Spins Green -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag">Best Bonus</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <rect width="160" height="80" fill="#1a1a1a" rx="4"/>
+                            <text x="80" y="40" text-anchor="middle" fill="white" font-size="24" font-weight="bold">NY</text>
+                            <text x="80" y="60" text-anchor="middle" fill="white" font-size="16" font-weight="bold">SPINS</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">100% bonus up to £50 + 50 Free Spins</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★★</div>
+                        <div class="reviews-count">Reviews (22,602)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">9.1</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn green">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit NY Spins »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    Must be 18+ to use. Welcome offer for new players residing in Great Britain only. Maximum £50 bonus. Minimum deposit: £20. Some games may not be played with an active b... <span class="show-more">Show More</span>
+                </div>
+            </div>
+
+            <!-- MrQ -->
+            <div class="casino-item">
+                <div class="casino-card">
+                    <div class="casino-tag welcome-bonus">Welcome Bonus</div>
+                    <div class="casino-logo">
+                        <svg width="160" height="80" viewBox="0 0 160 80" fill="none">
+                            <rect width="80" height="60" fill="#ffd700" rx="8" x="40" y="10"/>
+                            <text x="80" y="45" text-anchor="middle" fill="#000" font-size="32" font-weight="bold">MrQ</text>
+                        </svg>
+                    </div>
+                    <div class="bonus-info">
+                        <div class="bonus-text">Spend £10 Get 60 Spins!</div>
+                    </div>
+                    <div class="rating-section">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviews-count">Reviews (45,789)</div>
+                    </div>
+                    <div class="score-section">
+                        <div class="score">8.9</div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#" class="get-bonus-btn">GET BONUS</a>
+                        <a href="#" class="visit-link">Visit MrQ »</a>
+                    </div>
+                </div>
+                <div class="terms">
+                    First deposit only. Min deposit & spend £10. Max 60 spins on Book of Dead at 10p per spin. Winnings credited upon spin completion at the rate at which they were spun. £30 cap. T&Cs apply... <span class="show-more">Show More</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-section-inner">
+            <div class="content-container">
+                <h2>Discover the Best Online Casino Sites in the UK: Your Ultimate Guide</h2>
+                
+                <p>Online casino games offer an exciting and convenient way to enjoy gambling from home. However, with so many online casino sites to choose from, it can be difficult to find the right one for your needs. Whether you're a seasoned player or new to the world of online gaming, this guide will help you navigate the options and pick a platform that fits your style.</p>
+
+                <p>The best online casino sites offer a range of games, secure payment methods, and customer support you can rely on. Whether you're looking for classic table games, slots, or live dealer options, top online casino sites provide everything you need for an immersive experience. When choosing a casino online, consider factors like game variety, user interface, bonuses, and licenses. If you're in the UK, make sure to pick a site with proper regulations to ensure a safe and fair environment.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
